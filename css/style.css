@@ -1,0 +1,38 @@
+html {
+    font-size: 1rem;
+}
+
+header > h1 {
+    font-weight: lighter;
+}
+
+.hero {
+    margin-top: 40px;
+}
+
+.work {
+    margin-top: 40px;
+    padding-right: 95px;
+}
+
+.work > h2 {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 300px) {
+    html {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    html {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    html {
+        font-size: 1.2rem;
+    }
+}
