@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Alan Grinberg, Developer</title>
 </head>
 
@@ -25,12 +26,12 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
+                        <a class="nav-link" href="index.html">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">My Work</a>
+                        <a class="nav-link" href="#projects">My Work</a>
                     </li>
                 </ul>
                 <span class="lead">Alan Grinberg
@@ -40,36 +41,83 @@
     </header>
     <hr>
     <div class="container-fluid">
-        <div class="container hero float-right">
-            <img src="./img/heroimage.jpeg" class="img-fluid rounded" alt="hero">
+        <div class="container hero">
+            <div class="image">
+                    <img src="./img/heroimage.jpeg" class="img-fluid rounded" alt="hero">
+                    <div class="hero-text">
+                        <h1>Exploring modern design</h1>
+                        <p>With taste and style</p>
+                    </div>
+            </div>
         </div>
-        <div class="container work float-right">
+        <div class="container work" id="projects">
             <h2 class="font-weight-light">Featured Work</h2>
             <div class="row">
                 <div class="col">
                     <div class="project">
-                        <img class="img-fluid" src="./img/project.jpg" alt="project">
+                        <a href="https://alagrin92.github.io/react-random-quotes/">
+                            <img class="img-fluid" src="./img/react-quotes.png" alt="React quotes">
+                        </a>
                     </div>
-                    <h3>Appify</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <h3>Quote Generator</h3>
+                    <p>A revision of the Freecodecamp random quotes application</p>
                 </div>
                 <div class="col">
                     <div class="project">
-                        <img class="img-fluid" src="./img/project.jpg" alt="project">
+                        <a href="https://github.com/alagrin92/Ravenous">
+                            <img class="img-fluid" src="./img/ravenous.png" alt="ravenous">
+                        </a>
                     </div>
-                    <h3>Sunflower</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h3>Ravenous</h3>
+                    <p>A Yelp clone that tells you where to find the good stuff in your area</p>
                 </div>
                 <div class="col">
                     <div class="project">
-                        <img class="img-fluid" src="./img/project.jpg" alt="project">
+                        <a href="https://github.com/alagrin92/Jammming2">
+                            <img class="img-fluid" src="./img/jammming.png" alt="jamming project">
+                        </a>
                     </div>
-                    <h3>Bokeh</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <h3>Jammming</h3>
+                    <p>A single page application to search Spotify and create your own custom playlist right from the browser</p>
                 </div>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="container social">
+            <!--First row-->
+            <div class="row">
+                <!--First column-->
+                <div class="col-md-12">
+                    <div class="mb-5 flex-center" id="icons">
+                        <!--Facebook-->
+                        <a class="fbook" href="https://www.facebook.com/alagrin">
+                            <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Twitter-->
+                        <a class="twitter" href="https://twitter.com/alagrin">
+                            <i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Linkedin-->
+                        <a class="linkedin" href="https://www.linkedin.com/in/alagrin92/">
+                            <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Medium-->
+                        <!-- <a class="medium" href="#">
+                            <i class="fa fa-medium fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a> -->
+                    </div>
+                </div>
+                <!--/First column-->
+            </div>
+            <!--/First row-->
+        </div>
+        <!--/Footer Links-->
+
+        <!--Copyright-->
+        <div class="footer-copyright py-3 text-center">
+            © 2018 Copyright: Alan Grinberg </div>
+    </footer>
     <!-- Bootstrap javascript helpers-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
