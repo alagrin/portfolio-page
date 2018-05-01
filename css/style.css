@@ -44,11 +44,26 @@ header > h1 {
 
 footer {
     text-align: center;
-    height: 50px;
+    height: 30px;
 }
 
 .social {
     margin-bottom: -40px;
+}
+
+.contact {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#resume {
+    margin: 30px;
+}
+#resume a{
+    color: white;
+}
+
+#resume:hover a{
+    text-decoration: none;
 }
 
 #icons > a{
