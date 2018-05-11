@@ -1,88 +1,12 @@
-html {
-    font-size: 1rem;
-}
-
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-header > h1 {
-    font-weight: lighter;
-}
-
 .hero {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
-.image {
-    position: relative;
-    overflow-x: hidden;
-    opacity: 0.8;
+.box {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.hero-text {
-    position: absolute;
-    background-color: rgb(65, 62, 62);
-    color: white;
-    top: 200px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.work {
-    margin-top: 40px;
-}
-
-.work > h2 {
-    margin-bottom: 20px;
-}
-
-.project {
-    padding-bottom: 40px;
-}
-
-footer {
-    text-align: center;
-    height: 30px;
-}
-
-.social {
-    margin-bottom: -40px;
-}
-
-.contact {
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-#resume {
-    margin: 30px;
-}
-#resume a{
-    color: white;
-}
-
-#resume:hover a{
-    text-decoration: none;
-}
-
-#icons > a{
-    text-decoration: none;
-}
-@media screen and (min-width: 300px) {
-    html {
-        font-size: 0.8rem;
-    }
-}
-
-@media screen and (min-width: 500px) {
-    html {
-        font-size: 1rem;
-    }
-}
-
-@media screen and (min-width: 900px) {
-    html {
-        font-size: 1.2rem;
-    }
+footer .icon {
+    margin: 0 20px;
 }

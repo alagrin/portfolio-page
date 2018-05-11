@@ -3,127 +3,231 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap styles import -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <title>Alan Grinberg, Developer</title>
 </head>
 
 <body>
-    <header class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <img src="./img/logo.png" height="60" width="60" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">My Work</a>
-                    </li>
-                </ul>
-                <span class="lead">Alan Grinberg
-                    <br>Front End Ninja</span>
+    <header>
+        <nav class="navbar is-dark is-fixed-top">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <img src="./img/logo.png" alt="logo">
+                </a>
+                <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="/">
+                        Home
+                    </a>
+                    <a class="navbar-item" href="#works">
+                        My Work
+                    </a>
+                    <a class="navbar-item" href="#contact">
+                        Contact
+                    </a>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <p>Portfolio</p>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
-    <hr>
-    <div class="container-fluid">
-        <div class="container hero">
-            <div class="image">
-                    <img src="./img/heroimage.jpeg" class="img-fluid rounded" alt="hero">
-                    <div class="hero-text">
-                        <h1>Exploring modern design</h1>
-                        <p>With taste and style</p>
-                    </div>
-            </div>
-        </div>
-        <div class="container work" id="projects">
-            <h2 class="font-weight-light">Featured Work</h2>
-            <div class="row">
-                <div class="col">
-                    <div class="project">
-                        <a href="https://alagrin92.github.io/react-random-quotes/">
-                            <img class="img-fluid" src="./img/react-quotes.png" alt="React quotes">
-                        </a>
-                    </div>
-                    <h3>Quote Generator</h3>
-                    <p>A revision of the Freecodecamp random quotes application</p>
-                </div>
-                <div class="col">
-                    <div class="project">
-                        <a href="https://github.com/alagrin92/Ravenous">
-                            <img class="img-fluid" src="./img/ravenous.png" alt="ravenous">
-                        </a>
-                    </div>
-                    <h3>Ravenous</h3>
-                    <p>A Yelp clone that tells you where to find the good stuff in your area</p>
-                </div>
-                <div class="col">
-                    <div class="project">
-                        <a href="https://github.com/alagrin92/Jammming2">
-                            <img class="img-fluid" src="./img/jammming.png" alt="jamming project">
-                        </a>
-                    </div>
-                    <h3>Jammming</h3>
-                    <p>A single page application to search Spotify and create your own custom playlist right from the browser</p>
-                </div>
-            </div>
-        </div>
-        <div class="container contact">
-            <div class="text-center">
-                <h2>Contact Me</h2>
-                <button id="resume" class="btn btn-info"><a href="../files/AlanGrinbergResume.pdf" target="_blank">My Resumé</a></button>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <footer>
-        <div class="container social">
-            <!--First row-->
-            <div class="row">
-                <!--First column-->
-                <div class="col-md-12">
-                    <div class="mb-5 flex-center" id="icons">
-                        <!--Facebook-->
-                        <a class="fbook" href="https://www.facebook.com/alagrin">
-                            <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                        </a>
-                        <!--Twitter-->
-                        <a class="twitter" href="https://twitter.com/alagrin">
-                            <i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                        </a>
-                        <!--Linkedin-->
-                        <a class="linkedin" href="https://www.linkedin.com/in/alagrin92/">
-                            <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                        </a>
-                        <!--Medium-->
-                        <!-- <a class="medium" href="#">
-                            <i class="fa fa-medium fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                        </a> -->
-                    </div>
-                </div>
-                <!--/First column-->
-            </div>
-            <!--/First row-->
-        </div>
-        <!--/Footer Links-->
 
+    <section class="hero is-large is-info is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Exploring Web Development
+                </h1>
+                <h2 class="subtitle">
+                    With Style and Substance
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="works">
+        <div class="container">
+            <h1 class="title">Featured Work</h1>
+            <h2 class="subtitle">
+                A sampling of the works done on personal projects, design for others as well as full stack projects that are ongoing.
+            </h2>
+            <div class="about">
+                <h1 class="title">A bit about me...</h1>
+                <h2 class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto alias ex unde, animi tempora inventore
+                    nemo! Provident odio facilis tenetur unde itaque perspiciatis, repudiandae ratione saepe, fuga, cumque
+                    qui quae?</h2>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <div class="box">
+                        <figure class="image is-4by3">
+                            <a href="https://alagrin92.github.io/react-random-quotes/">
+                                <img src="./img/react-quotes.png" alt="React quotes">
+                            </a>
+                        </figure>
+                        <div class="content has-text-centered">
+                            <h3>Quote Generator</h3>
+                            <p>A revision of the Freecodecamp random quotes application</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <figure class="image is-4by3">
+                            <a href="https://github.com/alagrin92/Ravenous">
+                                <img src="./img/ravenous.png" alt="ravenous">
+                            </a>
+                        </figure>
+                        <div class="content has-text-centered">
+                            <h3>Ravenous</h3>
+                            <p>A Yelp clone that tells you where to find the good stuff in your area</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <figure class="image is-4by3">
+                            <a href="https://github.com/alagrin92/Jammming2">
+                                <img src="./img/jammming.png" alt="jamming project">
+                            </a>
+                        </figure>
+                        <div class="content has-text-centered">
+                            <h3>Jammming</h3>
+                            <p>A single page application to search Spotify and create your own custom playlist right from the
+                                browser
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="content has-text-centered">
+                <h2>Contact Me</h2>
+                <button class="button has-background-success">
+                    <a href="../files/AlanGrinbergResume.pdf" target="_blank">My Resumé</a>
+                </button>
+            </div>
+            <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Name">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Phone</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="text" placeholder="Phone">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                        <!-- <i class="fas fa-check"></i> -->
+                    </span>
+                </div>
+                <p class="help is-success"></p>
+            </div>
+
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="email" placeholder="Email input" value="hello@">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                        <!-- <i class="fas fa-exclamation-triangle"></i> -->
+                    </span>
+                </div>
+                <p class="help is-danger"></p>
+            </div>
+
+            <div class="field">
+                <label class="label">Subject</label>
+                <div class="control">
+                    <div class="select">
+                        <select>
+                            <option>Select dropdown</option>
+                            <option>With options</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                    <textarea class="textarea" placeholder="Textarea"></textarea>
+                </div>
+            </div>
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-link">Submit</button>
+                </div>
+                <div class="control">
+                    <button class="button is-text">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer has-text-centered">
+        <span class="icon">
+            <a class="fbook" href="https://www.facebook.com/alagrin">
+                <i class="fab fa-facebook fa-2x"> </i>
+            </a>
+        </span>
+        <span class="icon">
+            <a class="twitter" href="https://twitter.com/alagrin">
+                <i class="fab fa-twitter fa-2x"> </i>
+            </a>
+        </span>
+        <span class="icon">
+            <a class="linkedin" href="https://www.linkedin.com/in/alagrin92/">
+                <i class="fab fa-linkedin fa-2x"> </i>
+            </a>
+        </span>
+        <span class="icon">
+            <a class="medium" href="https://medium.com/@alagrin">
+                <i class="fab fa-medium fa-2x"> </i>
+            </a>
+        </span>
+        <span class="icon">
+            <a class="github" href="https://github.com/alagrin92">
+                <i class="fab fa-github fa-2x"> </i>
+            </a>
+        </span>
         <!--Copyright-->
-        <div class="footer-copyright py-3 text-center">
-            © 2018 Copyright: Alan Grinberg </div>
+        <div class="copyright has-text-centered">
+            <p>© 2018 Copyright: Alan Grinberg</p>
+        </div>
     </footer>
     <!-- Bootstrap javascript helpers-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
