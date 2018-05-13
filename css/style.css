@@ -10,3 +10,11 @@
 footer .icon {
     margin: 0 20px;
 }
+
+.hero {
+    background-image: url(../img/heroimage.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
