@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Bootstrap styles import -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
@@ -26,7 +25,7 @@
                 </div>
             </div>
 
-            <div class="navbar-menu">
+            <div class="navbar-menu target">
                 <div class="navbar-start">
                     <a class="navbar-item" href="/">
                         Home
@@ -138,70 +137,70 @@
                     <a href="../files/AlanGrinbergResume.pdf" target="_blank">My Resumé</a>
                 </button>
                 <br>
-                <h3>Contact me functionality incoming!!!</h3>
             </div>
             <hr>
-            <div class="field">
-                <label class="label">Name</label>
-                <div class="control">
-                    <input class="input" type="text" placeholder="Name">
-                </div>
-            </div>
-
-            <div class="field">
-                <label class="label">Phone</label>
-                <div class="control has-icons-left has-icons-right">
-                    <input class="input" type="text" placeholder="Phone">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-user"></i>
-                    </span>
-                    <span class="icon is-small is-right">
-                        <!-- <i class="fas fa-check"></i> -->
-                    </span>
-                </div>
-                <p class="help is-success"></p>
-            </div>
-
-            <div class="field">
-                <label class="label">Email</label>
-                <div class="control has-icons-left has-icons-right">
-                    <input class="input" type="email" placeholder="Email input" value="hello@">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
-                    </span>
-                    <span class="icon is-small is-right">
-                        <!-- <i class="fas fa-exclamation-triangle"></i> -->
-                    </span>
-                </div>
-                <p class="help is-danger"></p>
-            </div>
-
-            <div class="field">
-                <label class="label">Subject</label>
-                <div class="control">
-                    <div class="select">
-                        <select>
-                            <option>Select dropdown</option>
-                            <option>With options</option>
-                        </select>
+            <form method="POST" action="https://formspree.io/alagrin92@gmail.com">
+                <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                        <input class="input" type="text" name="name" placeholder="Name">
                     </div>
                 </div>
-            </div>
 
-            <div class="field">
-                <label class="label">Message</label>
-                <div class="control">
-                    <textarea class="textarea" placeholder="your message"></textarea>
+                <div class="field">
+                    <label class="label">Phone</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input class="input" type="text" name="phone" placeholder="Phone">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                        </span>
+                        <span class="icon is-small is-right">
+                            <!-- <i class="fas fa-check"></i> -->
+                        </span>
+                    </div>
+                    <p class="help is-success"></p>
                 </div>
-            </div>
-            <div class="field is-grouped">
-                <div class="control">
-                    <button class="button is-link">Submit</button>
+
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input class="input" type="email" name="_replyto" placeholder="Email input" value="hello@">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="icon is-small is-right">
+                            <!-- <i class="fas fa-exclamation-triangle"></i> -->
+                        </span>
+                    </div>
+                    <p class="help is-danger"></p>
                 </div>
-                <div class="control">
-                    <button class="button is-text">Cancel</button>
+
+                <div class="field">
+                    <label class="label">Subject</label>
+                    <div class="control">
+                        <div class="select">
+                            <select name="type">
+                                <option value="general">General</option>
+                                <option value="site dev">Site Development</option>
+                                <option value="wordpress">Wordpress</option>
+                                <option value="react">Database/Back-end</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
-            </div>
+
+                <div class="field">
+                    <label class="label">Message</label>
+                    <div class="control">
+                        <textarea class="textarea" name="message" placeholder="your message"></textarea>
+                    </div>
+                </div>
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button class="button is-link" type="submit" value="Send">Submit</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
 
@@ -235,15 +234,14 @@
         </span>
         <!--Copyright-->
         <div class="copyright has-text-centered">
-            <br><p>© 2018 Copyright: Alan Grinberg</p>
+            <br>
+            <p>© 2018 Copyright: Alan Grinberg</p>
         </div>
     </footer>
     <!-- Bootstrap javascript helpers-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
 </body>
 
